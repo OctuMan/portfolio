@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Abdo's Portfolio</title>
+</head>
+<body class="font-[Open_Sans] bg-white text-black dark:bg-gray-900 dark:text-white">
+  <!-- Header Section  -->
+   <header class="sticky top-5 z-50 backdrop-blur ">
+        <section class="header  relative  my-5 px-4 py-4  mx-2 rounded-full flex justify-between items-center shadow-lg inset-shadow-xs
+        md:container md:px-5 md:mx-auto ">
+            <div class="logo ">
+                    <a href="#default" class="font-[Poppins] text-xl font-medium"><span class="font-[nova_script] text-secondary ">A</span>bderrahman</a>
+            </div>
+            <nav id="nav-menu" class="hidden md:block ">
+                <ul class="flex flex-col r absolute  w-full h-[100vh] md:h-fit top-[110%] left-0 rounded-4xl shadow-2xl  gap-5 text-xl dark:text-white font-semibold py-10 px-5 text-primary
+                md:shadow-none md:flex-row md:gap-10 md:items-center z-50 md:font-normal md:text-base md:py-0 md:static bg-white dark:bg-gray-900">
+                    
+                    <li><a  href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="mt-5 md:mt-0">
+                        <a href="#projects" class="inline-block bg-secondary text-white px-5 py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                            View Projects
+                        </a>
+                    </li>
+                    
+                </ul> 
+            </nav>
+           
+            <div class="controls flex justify-center items-center gap-2 "> 
+           
+                <button type="button" id="theme-btn">
+                    <svg id="night-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+                    <svg id="light-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+
+                <!-- Language Dropdown -->
+                <div class="relative" id="lang-dropdown">
+                    <button type="button" id="lang-btn" aria-haspopup="true" aria-expanded="false" class="flex items-center gap-2 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                        <path d="M2 12h20"/>
+                    </svg>
+                    <span id="lang-display">EN</span>
+                    </button>
+                    <ul class="hidden absolute right-0 mt-2 w-24 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-1 z-50" id="lang-menu">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="ar">العربية</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="en">English</a></li>
+    
+                </ul>
+                </div>
+                
+                <button id="menu" class="md:hidden">
+                    <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu  "><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                    <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+        </section>
+        <!-- Hero Section  -->
+         <main>
+          <section class="hero  my-14 mx-2 gap-4 p-2  flex flex-col items-center justify-center">
+            <div class="hero-img mb-5">
+              <img src="images/profile.png" class="w-36 h-36 rounded-full border-secondary border shadow-xl">
+            </div>
+            <div class="hero-text flex flex-col items-center justify-center gap-2">
+              <h1 class="text-3xl font-bold text-center">Basic Web Developer</h1>
+              <p class="text-center text-paragraph dark:text-gray-400">Hi, I’m Abderrahman. I create web apps that are simple, modern, and built to solve real-world challenges.</p>
+              <div class="social flex gap-2 mt-5 ">
+                <!-- Social Links -->
+                <ul class="flex justify-center mb-8 space-x-6">
+                  <!-- Facebook -->
+                  <li>
+                    <a href="https://facebook.com/yourprofile" target="_blank"
+                      class="flex items-center justify-center w-12 h-12 rounded-full 
+                              bg-gray-100 text-gray-600 hover:bg-blue-600 hover:text-white 
+                              dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-blue-500 
+                              transition-colors duration-300 shadow-sm">
+                      <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                  </li>
+
+                  <!-- WhatsApp -->
+                  <li>
+                    <a href="https://wa.me/1234567890" target="_blank"
+                      class="flex items-center justify-center w-12 h-12 rounded-full 
+                              bg-gray-100 text-gray-600 hover:bg-green-600 hover:text-white 
+                              dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-green-500 
+                              transition-colors duration-300 shadow-sm">
+                      <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                  </li>
+
+                  <!-- LinkedIn -->
+                  <li>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"
+                      class="flex items-center justify-center w-12 h-12 rounded-full 
+                              bg-gray-100 text-gray-600 hover:bg-sky-600 hover:text-white 
+                              dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-sky-500 
+                              transition-colors duration-300 shadow-sm">
+                      <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                  </li>
+
+                  <!-- GitHub -->
+                  <li>
+                    <a href="https://github.com/yourprofile" target="_blank"
+                      class="flex items-center justify-center w-12 h-12 rounded-full 
+                              bg-gray-100 text-gray-600 hover:bg-black hover:text-white 
+                              dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 
+                              transition-colors duration-300 shadow-sm">
+                      <i class="fab fa-github text-xl"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="cta-buttons flex gap-3 mt-5">
+                  <a href="#projects" class="inline-block bg-secondary text-white px-5 py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                            View Projects 
+                        <i class="fa-solid fa-arrow-right ml-1"></i>                  
+                  </a>
+                  <a href="#projects" class="inline-block bg-primary text-white px-5 py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                    Contact Me
+                </a>
+              </div>
+              <div class="scroll-to-explore flex mt-10 gap-2 items-center text-paragraph dark:text-gray-400 text-sm">
+                <i id="scroll-icon" class="fa-solid fa-angles-down animate-bounce"></i>
+                <p>Scroll to explore</p>
+              </div>
+            </div>
+            
+          </section>
+         </main>
+   </header>
+  
+   <script>
+
+
+
+
+// Theme toggle
+const themeBtn = document.getElementById('theme-btn');
+const nightBtn = document.getElementById('night-btn');
+const lightBtn = document.getElementById('light-btn');
+const html = document.documentElement;
+
+const savedTheme = localStorage.getItem('theme') || 'light';
+if (savedTheme === 'dark') {
+    html.classList.add('dark');
+    nightBtn.classList.add('hidden');
+    lightBtn.classList.remove('hidden');
+}
+
+themeBtn.addEventListener('click', ()=> {
+    nightBtn.classList.toggle('hidden');
+    lightBtn.classList.toggle('hidden');
+    const isDark = html.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+})
+
+// Menu Mobile toggle
+const menu = document.getElementById('menu');
+const menuClose = document.getElementById('menu-close');
+const menuOpen = document.getElementById('menu-open');
+const navMenu = document.getElementById('nav-menu');
+menu.addEventListener('click', ()=>{
+    menuClose.classList.toggle('hidden');
+    menuOpen.classList.toggle('hidden');
+    navMenu.classList.toggle('hidden');
+})
+document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+        navMenu.classList.add('hidden');
+        menuOpen.classList.remove('hidden');
+        menuClose.classList.add('hidden');
+        
+});
+});
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+
+  if (!menu.contains(e.target) && !menu.contains(e.target)) {
+    navMenu.classList.add('hidden');
+    navMenu.setAttribute('aria-expanded', 'false');
+    menuOpen.classList.remove('hidden');
+    menuClose.classList.add('hidden');
+  }
+});
+
+const LANGUAGES = { en: 'en', ar: 'ar' };
+const LANGUAGE_LABELS = { en: 'English', ar: 'العربية' };
+
+let currentLang = localStorage.getItem('lang') || 'en';
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+const langDisplay = document.getElementById('lang-display');
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  langDisplay.textContent = LANGUAGE_LABELS[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+}
+
+applyLanguage(currentLang);
+
+// Toggle menu
+langBtn.addEventListener('click', () => {
+  const expanded = langBtn.getAttribute('aria-expanded') === 'true';
+  langBtn.setAttribute('aria-expanded', !expanded);
+  langMenu.classList.toggle('hidden');
+});
+
+// Language select
+langMenu.querySelectorAll('a').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    const lang = e.currentTarget.dataset.lang;
+    if (LANGUAGES[lang]) {
+      applyLanguage(lang);
+      langMenu.classList.add('hidden');
+      langBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', e => {
+  if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+    langMenu.classList.add('hidden');
+    langBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// Close with ESC key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    langMenu.classList.add('hidden');
+    langBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+   </script>
+</body>
+
+</html>
