@@ -13,7 +13,7 @@
 <body class="font-[Open_Sans] bg-white text-black dark:bg-gray-900 dark:text-white">
   <!-- Header Section  -->
    <header class="sticky top-5 z-50 backdrop-blur ">
-        <section class="header  relative  my-5 px-4 py-4 dark:shadow-primary dark:shadow-2xs  mx-2 rounded-full flex justify-between items-center shadow-lg inset-shadow-xs
+        <section class="header  relative  my-5 px-4 py-4 dark:shadow-primary dark:shadow-xs  dark:inset-shadow-xs  mx-2 rounded-full flex justify-between items-center shadow-lg inset-shadow-xs
         md:container md:px-5 md:mx-auto ">
             <div class="logo ">
                     <a href="#default" class="font-[Poppins] text-xl font-medium"><span class="font-[nova_script] text-secondary ">A</span>bderrahman</a>
@@ -65,12 +65,12 @@
         </section>
         <!-- Hero Section  -->
          <main>
-          <section class="hero  my-14 mx-2 gap-4 p-2  flex flex-col items-center justify-center">
+          <section class="hero my-14 mx-2 gap-4 p-2 md:mt-20 flex flex-col items-center justify-center">
             <div class="hero-img mb-5">
-              <img src="images/profile.png" class="w-40 h-40 rounded-full border-secondary border shadow-xl">
+              <img src="images/profile.png" class="w-40 h-40 md:w-50 md:h-50 rounded-full border-secondary border shadow-xl">
             </div>
             <div class="hero-text flex flex-col items-center justify-center gap-2">
-              <h1 class="text-3xl font-bold font-[Poppins] text-center">Basic Web Developer</h1>
+              <h1 class="text-3xl font-bold font-[Poppins] text-center md:text-5xl">Basic Web Developer</h1>
               <p class="text-center text-paragraph dark:text-gray-400">Hi, I’m Abderrahman. I create web apps that are simple, modern, and built to solve real-world challenges.</p>
               <div class="social flex gap-2 mt-5 ">
                 <!-- Social Links -->
@@ -121,21 +121,95 @@
                 </ul>
               </div>
               <div class="cta-buttons flex gap-3 mt-5">
-                  <a href="#projects" class="inline-block bg-secondary text-white px-5 py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                  <a href="#projects" class="inline-block bg-secondary text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
                             View Projects 
                         <i class="fa-solid fa-arrow-right ml-1"></i>                  
                   </a>
-                  <a href="#projects" class="inline-block bg-primary text-white px-5 py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                  <a href="#projects" class="inline-block bg-primary text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
                     Contact Me
                 </a>
               </div>
-              <div class="scroll-to-explore flex mt-10 gap-2 items-center text-paragraph dark:text-gray-400 text-sm">
+              <div class="scroll-to-explore flex mt-10 gap-2 items-center md:mt-32 text-paragraph dark:text-gray-400 text-sm">
                 <i id="scroll-icon" class="fa-solid fa-angles-down animate-bounce"></i>
                 <p>Scroll to explore</p>
               </div>
             </div>
             
           </section>
+
+          <!-- About Me Section  -->
+           <section class="about-me md:container md:mx-auto  my-10 p-5 flex flex-col gap-5 justify-center items-center md:p-5">
+            <div class="section-header text-center mb-10">
+              <h2 class="text-4xl font-bold">About Me</h2>
+              <p class="italic text-paragraph">A bit about my journey and the tools I use.</p>
+            </div>
+            <div class="main-content w-full flex  flex-col gap-5 md:flex-row md:grid md:grid-cols-2 ">
+              <div class="education ">
+                <h3 class="text-2xl font-semibold">Education</h3>
+                <div class="emthy-card my-5 bg-accent rounded-2xl shadow-2xl p-5 dark:text-black">
+                  <div class="multi-steps my-5 flex gap-4">
+                  <div class="line relative bg-primary w-[3px] h-80 rounded-full">
+                    <div class="dots flex  p-5 flex-col gap-16 absolute top-[50%] left-[50%] -translate-[50%]">
+                      <div class="dot w-4 h-4 border-2 border-primary bg-secondary rounded-full shadow-2xl "> </div>
+                      <div class="dot w-4 h-4  border-2 border-primary bg-secondary rounded-full shadow-2xl"></div>
+                      <div class="dot w-4 h-4 border-2 border-primary bg-secondary rounded-full shadow-2xl"></div>
+                      <div class="dot w-4 h-4  border-2 border-primary bg-secondary rounded-full shadow-2xl"></div>
+
+                    </div>
+
+                  </div>
+                  <div class="items flex flex-col gap-8 py-5 mt">
+                    <div class="item">
+                      <h3 class="text-lg font-semibold">Diploma - 2020/2025</h3>
+                      <p class="italic text-paragraph">Specilized in web computer science </p>
+                    </div>
+                    <div class="item">
+                      <h3 class="text-lg ">Diploma - 2020/2025</h3>
+                      <p class="italic text-paragraph">Specilized in web dev technologies </p>
+                    </div>
+                    <div class="item">
+                      <h3 class="text-lg ">Diploma - 2020/2025</h3>
+                      <p class="italic text-paragraph">Specilized in web dev </p>
+                    </div>
+                    <div class="item">
+                      <h3 class="text-lg ">2020/2025 - Bachlor certificate</h3>
+                      <p class="italic text-paragraph">Specilized in web dev </p>
+                    </div>
+                  </div>
+                      
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="skills">
+                
+                <h3 class="text-2xl font-semibold">Skills</h3>
+                <div class="emthy-card my-5 bg-accent rounded-2xl flex-wrap shadow-2xl p-5 flex gap-4 dark:text-black">
+                  <img src="images/basics.png" class="w-36 ">
+
+                </div>
+                <div class="emthy-card  my-5 bg-accent rounded-2xl flex-wrap shadow-2xl p-5 flex gap-4 dark:text-black">
+                  <img src="images/bootstrap.png" class="w-12">
+                  <img src="images/tailwind.png" class="w-20">
+                </div>
+                <div class="emthy-card  my-5 bg-accent rounded-2xl flex-wrap shadow-2xl p-5 flex gap-4 dark:text-black">
+                  <img src="images/git.png" class="w-10 h-10">
+                  <img src="images/github.png" class="w-10 ">
+                </div>
+
+                  <div class="cta-buttons flex gap-3 mt-10 justify-center items-center ">
+                  <a href="#view-github" class="inline-block bg-secondary text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                            View GitHub 
+                        <i class="fa-solid fa-arrow-right ml-1"></i>                  
+                  </a>
+                  <a href="#download-cv" class="inline-block bg-primary text-white px-5 py-3 md:px-6 md:py-3 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all">
+                    Download CV
+                </a>
+              </div>
+              
+            </div>
+
+           </section>
           
          </main>
    </header>
