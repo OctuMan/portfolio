@@ -1,10 +1,56 @@
 {
-  "title": "Abdo's Portfolio",
-  "about": "About",
-  "projects": "Projects",
-  "contact": "Contact",
-  "viewProjects": "View Projects",
-  "welcome": "Hello! I'm Abderrahman, a front-end developer.",
-  "theme": "Toggle dark mode",
-  "language": "Change language"
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "viewProjects": "View Projects"
+  },
+  "hero": {
+    "title": "Basic Web Developer",
+    "description": "Hi, I’m Abderrahman. I create web apps that are simple, modern, and built to solve real-world challenges.",
+    "scroll": "Scroll to explore",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A bit about my journey and the tools I use.",
+    "education": "Education & Experience",
+    "skills": "Skills"
+  },
+  "projects": {
+    "title": "Latest Projects",
+    "subtitle": "Some of my featured projects.",
+    "viewDemo": "View Demo",
+    "viewGithub": "View on GitHub"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Let's discuss your project and how I can help bring your ideas to life.",
+    "talk": "Let's Talk Together",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email address",
+      "message": "Message",
+      "send": "Send message"
+    },
+    "social": {
+      "facebook": "Follow on Facebook",
+      "whatsapp": "Chat on WhatsApp",
+      "linkedin": "Follow on LinkedIn",
+      "github": "View on GitHub",
+      "location": "Dakhla Morocco"
+    }
+  },
+  "footer": "Designed & Developed By Abderrahman",
+  "education": {
+  "teacherTitle": "CS/IT High School Teacher",
+  "teacherDesc": "Get access to my blog where u can find resources about CS/IT concepts.",
+  "learnMore": "Learn more",
+  "licenseTitle": "License in computer science",
+  "licenseDesc": "Specialized in computer science.",
+  "certificateTitle": "Certificate in computer science",
+  "certificateDesc": "Focus in system development."
+}
+
 }
